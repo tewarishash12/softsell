@@ -1,12 +1,6 @@
-import React from "react";
+import { whyChooseUs } from "../data/features";
 
 const WhyChooseUs = () => {
-    const features = [
-        "Instant Quotes",
-        "Secure Transactions",
-        "Trusted by 1,000+ Clients",
-        "24/7 Customer Support",
-    ];
 
     return (
         <section className="py-16 bg-white dark:bg-gray-900">
@@ -15,16 +9,17 @@ const WhyChooseUs = () => {
                     Why Choose SoftSell?
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {features.map((feature, i) => (
+                    {whyChooseUs.map((feature, i) => (
                         <div
                             key={i}
                             className="p-6 border rounded-xl shadow-sm dark:border-gray-700 dark:bg-gray-800"
                         >
+                            <div className="text-4xl mb-4">{feature.icon}</div>
                             <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                                {feature}
+                                {feature.title}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                {feature.description}
                             </p>
                         </div>
                     ))}

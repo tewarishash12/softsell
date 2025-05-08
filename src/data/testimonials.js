@@ -17,12 +17,12 @@ export const testimonials = [
         name: "John Smith",
         role: "CTO",
         company: "TechBridge",
-        text: "SoftSell helped us recover thousands in unused licenses. The process was seamless.",
+        quote: "SoftSell helped us recover thousands in unused licenses. The process was seamless.",
     },
     {
         name: "Alice Johnson",
         role: "Procurement Lead",
         company: "CloudCore",
-        text: "Excellent support and fast payments. Highly recommended.",
+        quote: "Excellent support and fast payments. Highly recommended.",
     },
 ];

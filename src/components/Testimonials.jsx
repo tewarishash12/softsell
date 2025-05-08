@@ -14,7 +14,7 @@ const Testimonials = () => {
                             key={i}
                             className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
                         >
-                            <p className="italic mb-4 text-gray-900 dark:text-white">“{t.text}”</p>
+                            <p className="italic mb-4 text-gray-900 dark:text-white">“{t.quote}”</p>
                             <p className="font-semibold text-gray-900 dark:text-white">{t.name}</p>
                             <p className="text-sm text-gray-600 dark:text-gray-400">
                                 {t.role}, {t.company}
