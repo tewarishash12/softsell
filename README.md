@@ -1,12 +1,60 @@
-# React + Vite
+# 🛍️ SoftSell – Responsive One-Page Marketing Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, single-page website for the fictional software resale startup **SoftSell**. Built using **React + Vite** and **Tailwind CSS**, this project showcases clean code practices, polished design, and responsive UI across all devices.
 
-Currently, two official plugins are available:
+🚀 **[Live Demo on Vercel](https://softsell-jade.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React + Vite  
+- 🎨 Tailwind CSS  
+- 🌀 Framer Motion (animations)  
+- 🧩 Lucide React (icons)  
+- ☁️ Deployed via Vercel  
+
+---
+
+## 🎯 Objective
+
+Built as part of the **Credex Web Development Internship Assignment**, the goal of this project was to design a responsive, single-page landing site that demonstrates:
+
+- ✅ Component-based architecture  
+- ✅ UI/UX design principles  
+- ✅ Light/Dark theme toggling  
+- ✅ Responsive layout and animations  
+
+---
+
+## 🚀 Features Implemented
+
+- ✅ **Hero Section** – Headline, subheading, and CTA  
+- ✅ **How It Works** – Visual 3-step process  
+- ✅ **Why Choose Us** – Benefits tiles with icons  
+- ✅ **Customer Testimonials** – 2 dummy reviews  
+- ✅ **Contact Form** – Name, Email, Company, License Type, Message  
+- ✅ **Frontend Form Validation**  
+- ✅ **Dark/Light Mode Toggle** (floating button)  
+- ✅ **Framer Motion Animations**  
+- ✅ **Responsive Design** – mobile, tablet, desktop  
+- ✅ **Accessible & Semantic HTML**  
+- ✅ **Modular Folder Structure & Clean Component Hierarchy**  
+
+---
+
+## ✨ Bonus Enhancements
+
+- 🌙 Light/Dark Mode Toggle with Theme Context  
+- 💫 Page Fade Animations using Framer Motion  
+- 📱 Fully Responsive Design for all screen sizes  
+
+---
+
+## 🧪 Getting Started Locally
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/tewarishash12/softsell.git
+cd softsell
