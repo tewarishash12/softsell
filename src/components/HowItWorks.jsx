@@ -1,23 +1,38 @@
 import { howItWorksSteps } from "../data/features";
 
-const HowItWorks = () => {
+const HowItWorks = ({ darkMode }) => {
+    const sectionBg = darkMode
+        ? "bg-gradient-to-br from-gray-900 to-gray-800"
+        : "bg-gradient-to-br from-[#f9f9f6] to-[#eaeaea]"; // warm beige-gray blend
+
+    const headingColor = darkMode ? "text-yellow-400" : "text-gray-900";
+    const cardBg = darkMode
+        ? "bg-gradient-to-tr from-gray-800 to-gray-700"
+        : "bg-gradient-to-tr from-white to-[#fdfdfd]";
+    const cardTextColor = darkMode ? "text-yellow-300" : "text-gray-900";
+    const cardDescriptionColor = darkMode ? "text-gray-300" : "text-gray-600";
+    const cardShadow = darkMode
+        ? "shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+        : "shadow-[0_4px_20px_rgba(0,0,0,0.1)]";
 
     return (
-        <section className="py-16 bg-gray-100 dark:bg-gray-800 text-center">
-            <h2 className="text-3xl font-semibold mb-10 text-gray-900 dark:text-white">
+        <section className={`py-20 ${sectionBg} text-center transition-colors duration-500`}>
+            <h2 className={`text-3xl md:text-4xl font-playfair-display font-semibold mb-14 ${headingColor}`}>
                 How It Works
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
                 {howItWorksSteps.map((step, index) => (
                     <div
                         key={index}
-                        className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
+                        className={`p-8 rounded-2xl ${cardBg} ${cardShadow} transition-transform duration-300 hover:scale-105`}
                     >
-                        <div className="text-4xl mb-4">{step.icon}</div>
-                        <div className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+                        <div className="text-5xl mb-6">{step.icon}</div>
+                        <div className={`text-2xl font-playfair-display font-bold mb-3 ${cardTextColor}`}>
                             {step.title}
                         </div>
-                        <p className="text-gray-600 dark:text-gray-400">{step.description}</p>
+                        <p className={`font-open-sans text-base ${cardDescriptionColor}`}>
+                            {step.description}
+                        </p>
                     </div>
                 ))}
             </div>

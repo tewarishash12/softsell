@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { useTheme } from "./context/ThemeContext";
-import { AnimatePresence,motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
 function ToggleThemeButton() {
@@ -33,12 +33,12 @@ function App() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <Hero />
-          <HowItWorks />
-          <WhyChooseUs />
-          <Testimonials />
-          <ContactForm />
-          <Footer />
+          <Hero darkMode={darkMode} />
+          <HowItWorks darkMode={darkMode} />
+          <WhyChooseUs darkMode={darkMode} />
+          <Testimonials darkMode={darkMode} />
+          <ContactForm darkMode={darkMode} />
+          <Footer darkMode={darkMode} />
         </motion.div>
       </AnimatePresence>
     </div>

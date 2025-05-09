@@ -1,9 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
+    const bgColor = darkMode ? "bg-[#1c1c1c]" : "bg-[#f9f6f2]";
+    const textColor = darkMode ? "text-[#f0c674]" : "text-gray-700";
+
     return (
-        <footer className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white py-6 text-center">
-            <p className="text-sm">
+        <footer className={`${bgColor} ${textColor} py-6 text-center font-light transition-colors duration-500`}>
+            <p className="text-sm tracking-wide">
                 © {new Date().getFullYear()} SoftSell. All rights reserved.
             </p>
         </footer>
